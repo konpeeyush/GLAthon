@@ -165,29 +165,17 @@ ol {
     color: #5a5a5a;
     outline: none;
     transition: all 10ms ease;
-    display: block;
+    display:block;
     margin-bottom: 10px;
     /*margin-left: auto;*/
     /*margin-right: auto;*/
 }
 
-.w3l-login .form-section .field label {
-    display: inline-block;
-    font-weight: normal;
-    margin-left: 5px;
-    width: 100%;
-    vertical-align: middle;
-}
-
 .w3l-login .form-section .field input[type="checkbox"] {
-    width: 20px;
-    height: 20px;
-    background-color: #ffffff;
-    border: 2px solid #cccccc;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-right: 10px;
-    vertical-align: middle;
+    vertical-align: bottom;
+    position: relative;
+    bottom: 1px;
+    
 }
 
 .w3l-login .form-section .field input[type="checkbox"]:checked {
@@ -196,6 +184,14 @@ ol {
 
 }
 
+.w3l-login .form-section .field label {
+    display:inline-block;
+    font-weight: normal;
+    margin-left: 5px;
+    width: 100%;
+    vertical-align: middle;
+    border: 2px solid red;
+}
 
 .w3l-login .form-section .field input:focus {
     background: #fff;
