@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/styles/login.css">
+    <title>Login Page</title>
+</head>
+
+<body>
+    <section class="w3l-login">
+        <div class="overlay">
+            <div class="wrapper">
+                <div class="form-section">
+                    <h3>Login</h3>
+                    <h6>To continue with Us</h6>
+                    <form action="#" , method="post">
+
+                        <!-- Soft Skills -->
+                        <div class="field">
+                            <legend>Enter required Soft Skills</legend>
+                            <input type="checkbox" name="communicationSkills" id="communicationSkills" checked>
+                            <label for="communicationSkills"><span>Communication Skills</span></label>
+
+                            <input type="checkbox" name="timeManagement" id="timeManagement">
+                            <label for="timeManagement"><span>Time Management</span> </label>
+
+                            <input type="checkbox" name="leadership" id="leadership">
+                            <label for="leadership"><span>Leadership</span></label>
+
+                            <input type="checkbox" name="problemSolving" id="problemSolving">
+                            <label for="problemSolving"><span>Problem Solving</span></label>
+                        </div>
+
+                        <!-- Technical Skills -->
+                        <div class="field">
+                            <legend>Enter required Technical Skills</legend>
+                            <input type="checkbox" name="android" id="android" checked>
+                            <label for="android"><span>Native Android</span></label>
+
+                            <input type="checkbox" name="web" id="web">
+                            <label for="web"><span>Web Development</span></label>
+
+                            <input type="checkbox" name="blockchain" id="blockchain">
+                            <label for="blockchain"><span>Block Chain</span></label>
+
+                            <input type="checkbox" name="machineLeaning" id="machineLearning">
+                            <label for="machineLearning"><span>Machine Learning</span></label>
+                        </div>
+                        <!-- Projects -->
+                        <div class="field">
+                            <legend>Enter number of Projects</legend>
+                            <input type="number" class="projects" id="projects">
+                        </div>
+                        <button type="submit" class="btn btn-primary theme-button mt-4" value="predict">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id='stars'></div>
+    <div id='stars2'></div>
+    <div id='stars3'></div>
+</body>
+
+</html>
