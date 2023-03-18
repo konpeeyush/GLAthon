@@ -11,7 +11,7 @@ def index():
 def login():
     return render_template('login.html')
 
-@app.route('visualization')
+@app.route('/visualization')
 def visualization():
     return render_template('visualization.html')
 
