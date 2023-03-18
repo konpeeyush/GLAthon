@@ -56,3 +56,34 @@ body {
     border-radius: 6px;
     margin-left: 40px;
 }
+
+footer {
+    background-color: rgba(1, 49, 1, 0.856);
+    color: white;
+    padding: 30px;
+}
+
+.column {
+
+    float: left;
+    width: 25%;
+    padding: 10px;
+    height: 300px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+footer img {
+    width: 180px;
+    margin-left: 15px;
+}
+
+li {
+    display: inline;
+    margin: 5px;
+}

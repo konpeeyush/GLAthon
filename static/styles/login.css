@@ -172,6 +172,7 @@ ol {
 }
 
 .w3l-login .form-section .field input[type="checkbox"] {
+    display: inline-block;
     vertical-align: bottom;
     position: relative;
     bottom: 1px;
@@ -190,7 +191,7 @@ ol {
     margin-left: 5px;
     width: 100%;
     vertical-align: middle;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 .w3l-login .form-section .field input:focus {
