@@ -236,10 +236,16 @@ input[type="checkbox"]
     padding: 0px;
 }
 .check input{
+    border: none;
     margin: 10px;
 }
 
 .check input[type=number]{
+    width: 90%;
+    border-radius: 7px;
+}
+
+.check input[type=text]{
     width: 90%;
     border-radius: 7px;
 }
