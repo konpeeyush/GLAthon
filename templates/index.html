@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,60 +10,65 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"></script>
     <link rel="stylesheet" href="/static/styles/index.css">
 </head>
-
 <body>
-    <nav>
 
-        
-        <img src="static\assets\homepage\logo2.png" alt="err">
+   <nav class="nav">
+    <ul>
+      <li><img class="logo" src="/static/assets/homepage/logo2.png" alt=""></li>
+      
+      <a><li class="nav-elem">Home</li></a>
+    <a> <li class="nav-elem">About Us</li></a>
+  <a> <li class="nav-elem">Retention Strategies</li></a>
+<a> <li class="nav-elem">Recommend Students</li></a>
+<a> <li class="nav-elem">Contact Us</li></a>
+<a><li class="nav-elem"><button class="nav-btn">Sign Up</button></li></a>
+    
+    </ul>
+   </nav>
 
-        <a href="#">Home</a>
-        <a href="#">Retention Strategies</a>
-        <a href="#">About Us</a>
-
-        <div class="buttons">
-            <button class="btn">Sign Up</button>
-
-        </div>
-    </nav>
     <section id="home">
         <div class="header-section container flex">
             <div class="left-container">
                 <h1>WELCOME TO STUDENT <br>
                     RECOMMENDATION SYSTEM</h1>
 
-                <p>The software assists the university in automating the selection of the viable candidates for the
-                    process of recuitment.
-                    <br> Our vision is to automate the process of shortlisting by the usage of Machine Learning and Data
-                    Analysis.
-                    We provide various improvement solutions to recruiters to enhance retention rates of students
-                    using various demographics and analyzing latest technological trends.
+                
+                <p>The software assists the university in automating the selection of the viable candidates for the process of recuitment.
+                <br> Our vision is to automate the process of shortlisting by the usage of Machine Learning and Data Analysis.
+                We provide various improvement solutions to recruiters to enhance retention rates of students
+                using various demographics and analyzing latest technological trends.
                 </p>
                 <a href="#"><button class="retention">Retention Strategies</button></a>
             </div>
+           
+
+
+               
 
         </div>
         <div class="mission">
             <div class="mission-data">
                 <br>
-                <p>Let's take a deep dive into what are the key features and highlights which make this project a useful
-                    and a handy tool for any recruitment process.</p>
-                <br>
 
-                <h2>HIGHLIGHTS/ KEY FEATURES</h2>
-                <br>
-                <p>Selecting viable candidates for a particular company using recommendation system
-                    model.
-                    <br>
-                    Giving a detailed visualization of students preferred programming language, CP platform
-                    engagement, Leetcode progress and other co-curricular activities.
-                    <br>
-                    Using earlier placed student's to data to generate insights to help retention strategies.
-                </p>
-                <br>
-            </div>
-            <button class="recommend">Recommend Students</button>
+            <p>Let's take a deep dive into what are the key features and highlights which make this project a useful and a handy tool for any recruitment process.</p>
+            <br>
+            
+            <h2>HIGHLIGHTS/ KEY FEATURES</h2>
+            <br>
+         <p>Selecting viable candidates for a particular company using recommendation system
+        model.
+        <br>
+        Giving a detailed visualization of students preferred programming language, CP platform
+        engagement, Leetcode progress and other co-curricular activities.
+        <br>
+         Using earlier placed student's to data to generate insights to help retention strategies.
+        </p>
+        <br>
         </div>
+        <button class="recommend">Recommend Students</button>
+        </div> 
+      </section>
+
         <footer class="footer">
             <div class="row">
                 <div class="column">
@@ -95,6 +99,6 @@
                 </div>
             </div>
         </footer>
-</body>
 
+</body>
 </html>
