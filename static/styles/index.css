@@ -1,245 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&family=Raleway:wght@600&display=swap');
 
+body {
+    font-size: 16px;
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgb(255, 115, 0));
+}
 
 * {
-
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
- HEAD
-html,body{
-    overflow-x: hidden;
-}
-body{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(255, 115, 0));
-    
-}
-/* .header-section{
-    background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(255, 115, 0));
-}    */
-/* .left-container{
-   width: 450px;
-   height: 250px;
-   /* margin-left: 40px; */
-   /* margin-top: 10px; */
-/* } */
-
-
-
-
-
-body {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Baloo Bhaijaan 2', cursive;
 }
 
+nav {
+    box-shadow: 2px 5px rgba(0, 0, 0, 0.856);
+    backdrop-filter: blur(5px);
+}
 
-/* .header-section {
-    background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgb(255, 115, 0));
-} */
-
-.header-section{
+nav ul {
     display: flex;
-    flex-direction: right;
-    height: 100vh;
-}
-.left-container {
-    /* border: 2px   solid red; */
-    width: 50%;
-    height: 100%;
-    /* width: 450px; */
-    /* height: 450px; */
-    /* margin-left: 40px; */
-    padding: 30px;
-}
-.homeContent{
-    margin-left: 40px;
+    /* flex-direction: column; */
+    list-style: none;
+    justify-content: space-around;
     align-items: center;
-    justify-content: center;
-}
-.homeContent h1{
-    align-items: center;
+    background-color: rgba(1, 49, 1, 0.856);
+
 }
 
-
-.left-container data{
-    margin-left: 50px;
-}
-.right-container{
-    height: 100%;
-    width: 50%;
-    /* border: 2px solid red; */
-}
-.right-container img{
-    /* border: 2px solid green; */
-    /* width: 100%; */
-
-    
-    /* margin-left: 100px; */
-    width: 650px;
-    height: 650px;
+nav ul img {
+    width: 5.5em;
+    border-radius: 100px;
+    margin-top: 0.3em;
 }
 
-.retention {
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.1em;
+    transition: 5ms;
+}
 
-    width: 170px;
-    height: 36px;
-    background-color: rgb(139, 29, 29);
+nav ul li a button .button-link{
+    text-decoration: none;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6em;
+    transition: 5ms;
+}
+
+nav ul li a:hover {
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+}
+
+nav ul li button {
+    width: 4.5em;
+    height: 2.0em;
+    background-color: rgba(188, 115, 4);
     border: none;
     color: white;
-
-    border-radius: 3px;
-    margin-top: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.1em;
+    transition: 5ms;
+    border-radius: 10px;
+    font-weight: 900;
 }
-.mission{
+
+nav ul li button:hover {
+    background-color: rgba(188, 115, 4, 0.8);
+}
+
+.home {
+    display: flex;
+    height: 90vh;
+    /* border: 2px solid red; */
+}
+
+.left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.right img {
+    height: 100%;
+    border-radius: 100px;
+}
+
+.left .recruitment {
+    margin-left: 3em;
+    margin-bottom: 3em;
+    font-size: 1.1em;
+    margin-top: 15em;
+}
+
+.left .recruitment h1 {
+    font-size: 1.5em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    margin-bottom: 1em;
+    letter-spacing: 6px;
+}
+
+.left .recruitment p {
+    margin-bottom: 1em;
+}
+
+.left .recruitment button {
+    width: 15em;
+    height: 3em;
+    background-color: rgba(188, 115, 4);
+    border: none;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em;
+    transition: 5ms;
+    border-radius: 10px;
+    font-weight: 900;
+}
+.left .recruitment button a{
+    text-decoration: none;
+    color: white;
+}
+
+.left .recruitment button a:hover{
+    text-decoration: underline;
+}
+
+.left .recruitment button:hover {
+    background-color: rgba(188, 115, 4, 0.8);
+}
+
+.left .highlights {
+    margin: 2em;
+    background-color: rgba(1, 49, 1, 0.856);
+    padding: 1em;
+    border-radius: 10px;
+    width: 90%;
+    color: white;
     border: 1px solid rgba(255, 255, 255, .25);
     border-radius: 20px;
-    background-color: rgba(0, 0, 0, 0.1);
     box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(10px);
-
-    /* border-radius: 8px; */
-    /* margin-top: 10px; */
+    height: 100%;
 }
 
-.retention:hover{
-    background-color: rgb(250, 73, 9);
+.left .highlights .highlights-title p {
+    font-size: 1.1em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    margin-bottom: 0.4em;
+    line-height: 1.6;
 }
 
-.mission {
-
-    width: 550px;
-    height: 390px;
-    background-color: rgba(1, 49, 1, 0.856);
-    color: white;
-    margin-left: 50px;
-
-    border-radius: 6px;
-}
-.mission-data{
-    margin-left: 20px;
-    padding: 20px;
-}
-.recommend{
-
-    border-radius: 8px;
+.left .highlights h2 {
+    font-size: 1.4em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    margin-bottom: 0.8em;
+    letter-spacing: 8px;
 }
 
-.mission-data {
-    margin-left: 20px;
-    padding: 20px;
+.left .highlights .highlights-content p {
+    font-size: 1.1em;
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.8;
 }
 
-.recommend {
-
-    background-color: rgb(188, 115, 4);
-    color: white;
+.left .highlights button {
+    width: 15em;
+    height: 3em;
+    background-color: rgba(188, 115, 4);
     border: none;
-    width: 170px;
-    height: 36px;
-    border-radius: 6px;
-
-    margin-left: 40px ;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em;
+    transition: 5ms;
+    border-radius: 10px;
+    font-weight: 900;
+    margin-top: 1.5em;
 }
 
+.left .highlights button a{
+    text-decoration: none;
+    color: white;
+}
+
+.left .highlights button a:hover{
+    text-decoration: underline;
+}
+
+.left .highlights button:hover {
+    background-color: rgba(188, 115, 4, 0.8);
+}
 
 footer {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
     background-color: rgba(1, 49, 1, 0.856);
     color: white;
-    padding: 34px;
-    height: 400px;
+    padding: 2em;
+    font-size: 1.2em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    letter-spacing: 2px;
 }
 
-.column {
-
-    float: left;
-    width: 33%;
-    padding: 10px;
-    height: 200px;
+footer .ourMission,
+.ourVision,
+.address {
+    padding: 6em;
 }
 
-.box-b{
-    background-color: white;
-    height: 50px;
+footer .ourMission h3{
+    font-size: 1.8em;
+    letter-spacing: 6px;
+}
+footer .ourVision h3{
+    font-size: 1.8em;
+    letter-spacing: 6px;
+}
+footer .address h3{
+    font-size: 1.8em;
+    letter-spacing: 6px;
 }
 
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-.footer .row{
-    margin-top: 80px;
+footer .ourMission p,
+.ourVision p,
+.address p{
+    font-size: 0.8em;
 }
 
-footer img {
-    width: 150px;
-    margin-left: 15px;
-    height: 160px;
-}
 
-li {
-    display: inline;
-    align-items: center;
-    justify-content: center;
-    /* margin: 5px; */
-}
-
-.nav{
-  display: flex;
-  background-color:  rgba(1, 49, 1, 0.856);
-  height: 80px;
-  
-
-}
-.nav-b :hover{
-    text-decoration: underline;
-    transition: 0.3s;
-    transform: scale(1.5);
-    /* color: red; */
-    
-}
-nav img{
-  width: 70px;
-  height: 60px;
-  border-radius: 50px;
-  margin-right: 180px;
-  margin-top: 15px;
-  margin-left: 50px;
-}
-nav ul{
-    /* border: 2px solid red; */
-  display: inline;
-  padding-bottom: 15px;
-}
-.nav-b{
-    padding: auto;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-}
-
-.nav-elem{
-    /* border: 2px solid rebeccapurple; */
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 40px;
-    margin-left: 10px;
-    margin-right: 6px;
-    color: white;
-    margin-top: 0px;
-}
-.nav-btn{
-  margin-left: 120px;
-  float: inline-end;
-  background-color:  rgb(188, 115, 4);
-  border: none;
-  border-radius: 3px;
-  width: 100px;
-  height: 40px;
-  font-size: 16px;
-  margin-bottom: 5px;
-  color: white;
-
-}

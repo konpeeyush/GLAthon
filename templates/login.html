@@ -14,123 +14,83 @@
         <div class="overlay">
             <div class="wrapper">
                 <div class="form-section">
-                    <h3>Login</h3>
+                    <h3>Requirements</h3>
                     <h6>To continue with Us</h6>
-                    <form action="#" , method="POST">
-
-
-
-
-
-                        <!-- Soft Skills -->
-                        <!-- <div class="field">
-
-                            <legend>Enter required Soft Skills</legend> -->
-                            <!-- <div class="align">
-                                <input type="checkbox" name="communicationSkills">
-                            <label for="communicationSkills">
-                            <span>communication Skills</span>
-                            </label>
-                            <input type="checkbox" name="timeManagement">
-                            <label for="timeManagement">Time Management</label>
-                            <input type="checkbox" name="leadership">
-                            <label for="leadership">
-                            Leadership
-                            </label>
-                            <input type="checkbox" name="problemSolving">
-                            <label for="problemSolving">Problem Solving</label>
-                            </div> -->
-                            
-                        <!-- </div> -->
-
-                        
-
+                    <form action="{{url_for('predict')}}" , method="POST" id="form">
                         <div class="check" id="formId">
-                            <form action="/action_page.php">
-                                <legend><strong><center>Enter required Programming Languages</center></strong></legend>
-                                <input type="checkbox" name="Java">
-                                <label for="Java">Java</label><br>
-                                <input type="checkbox" name="C/C++">
-                                <label for="C/C++">C/C++</label><br>
-                                <input type="checkbox" name="Python">
-                                <label for="Python">Python</label><br>
-                                <input type="checkbox" name="HTML/CSS">
-                                <label for="HTML/CSS">HTML/CSS</label><br>
-                                <input type="checkbox" name="JavaScript">
-                                <label for="JavaScript">JavaScript</label><br>
-                            </form>
+                            <legend><strong>
+                                    <center>Enter required Programming Languages</center>
+                                </strong></legend>
+                            <input type="checkbox" name="Java" id="java" value="Java">
+                            <label for="Java">Java</label><br>
+                            <input type="checkbox" name="C/C++" id="c" value="C">
+                            <label for="C/C++">C/C++</label><br>
+                            <input type="checkbox" name="Python" id="python" value="Python">
+                            <label for="Python">Python</label><br>
+                            <input type="checkbox" name="HTML/CSS" id="html" value="HTML">
+                            <label for="HTML/CSS">HTML/CSS</label><br>
+                            <input type="checkbox" name="JavaScript" id="js" value="JavaScript">
+                            <label for="JavaScript">JavaScript</label><br>
+                        </div>
+                        <div class="check" id="formId">
+                            <legend><strong>
+                                    <center>Enter required Soft Skills</center>
+                                </strong></legend>
+                            <input type="checkbox" name="communicationSkills" id="communicationSkills"
+                                value="Communication Skills">
+                            <label for="communicationSkills">Communication Skills</label><br>
+                            <input type="checkbox" name="timeManagement" id="timeManagement"
+                                value="Time Management Skills">
+                            <label for="timeManagement">Time Management Skills</label><br>
+                            <input type="checkbox" name="leadership" id="leadership" value="Leadership Skills">
+                            <label for="leadership">Leadership Skills</label><br>
+                            <input type="checkbox" name="problemSolving" id="problemSolving"
+                                value="Problem Solving Skills">
+                            <label for="problemSolving">Problem Solving Skills</label><br>
                         </div>
 
-
                         <div class="check" id="formId">
-                            <form action="/action_page.php">
-                                <legend><strong><center>Enter required Soft Skills</center></strong></legend>
-                                <input type="checkbox" name="communicationSkills">
-                                <label for="communicationSkills">Communication Skills</label><br>
-                                <input type="checkbox" name="timeManagement">
-                                <label for="timeManagement">Time Management Skills</label><br>
-                                <input type="checkbox" name="leadership">
-                                <label for="leadership">Leadership Skills</label><br>
-                                <input type="checkbox" name="problemSolving">
-                                <label for="problemSolving">Problem Solving Skills</label><br>
-                            </form>
+                            <legend><strong>
+                                    <center>Enter required Hard Skills</center>
+                                </strong></legend>
+                            <input type="checkbox" name="DSA" value="DSA" id="dsa">
+                            <label for="DSA">Data Structure & Algorithms</label><br>
+                            <input type="checkbox" name="AndroidNative" id="androidNative" value="Android Native">
+                            <label for="AndroidNative">Android Native</label><br>
+                            <input type="checkbox" name="MachineLearning" id="machineLearning" value="Machine Learning">
+                            <label for="MachineLearning">Machine Learning</label><br>
+                            <input type="checkbox" name="Flutter" value="Flutter" id="flutter">
+                            <label for="Flutter">Flutter</label><br>
+                            <input type="checkbox" name="WebD" value="Web Development" id="webDevelopment">
+                            <label for="WebD">Web Development</label><br>
+                            <input type="checkbox" name="BlockChain" value="Block Chain" id="blockChain">
+                            <label for="BlockChain">Blockchain</label><br>
                         </div>
 
-
                         <div class="check" id="formId">
-                            <form action="/action_page.php">
-                                <legend><strong><center>Enter required Hard Skills</center></strong></legend>
-                                <input type="checkbox" name="DSA">
-                                <label for="DSA">Data Structure & Algorithms</label><br>
-                                <input type="checkbox" name="AndroidNative">
-                                <label for="AndroidNative">Android Native</label><br>
-                                <input type="checkbox" name="MachineLearning">
-                                <label for="MachineLearning">Machine Learning</label><br>
-                                <input type="checkbox" name="Flutter">
-                                <label for="Flutter">Flutter</label><br>
-                                <input type="checkbox" name="WebD">
-                                <label for="WebD">Web Development</label><br>
-                                <input type="checkbox" name="BlockChain">
-                                <label for="BlockChain">Blockchain</label><br>
-                            </form>
+                            <legend><strong>
+                                    <center>Enter required Extra Co-Curricular Activities</center>
+                                </strong></legend>
+                            <input type="checkbox" name="CodeForces" value="Code Forces" id="codeForces">
+                            <label for="CodeForces">CodeForces</label><br>
+                            <input type="checkbox" name="CodeChef" value="Code Chef" id="codeChef">
+                            <label for="CodeChef">CodeChef</label><br>
+                            <input type="checkbox" name="Coding Ninjas" value="Coding Ninjas" id="codingNinjas">
+                            <label for="Coding Ninjas">Coding Ninjas</label><br>
                         </div>
 
-
-
-                        <div class="check" id="formId">
-                            <form action="/action_page.php">
-                                <legend><strong><center>Enter required Extra Co-Curricular Activities</center></strong></legend>
-                                <input type="checkbox" name="LeetCode">
-                                <label for="LeetCode">LeetCode</label><br>
-                                <input type="checkbox" name="CodeForces">
-                                <label for="CodeForces">CodeForces</label><br>
-                                <input type="checkbox" name="CodeChef">
-                                <label for="CodeChef">CodeChef</label><br>
-                                <input type="checkbox" name="Coding Ninjas">
-                                <label for="Coding Ninjas">Coding Ninjas</label><br>
-                            </form>
-                        </div>
-                        
                         <div class="check" id="fromId">
-                            <legend><strong><center>CPI</center></strong></legend>
-                            <center><input type="text" class="projects" id="projects" placeholder="Out of 10"></center>
-                            <legend><strong><center>GD & PI Score</center></strong></legend>
-                            <center><input type="number" class="projects" id="projects" placeholder="Out of 20"></center>
-
-
+                            <legend><strong>
+                                    <center>CPI</center>
+                                </strong></legend>
+                            <center><input type="text" class="projects" id="cpi" placeholder="Out of 10"></center>
+                            <legend><strong>
+                                    <center>GD & PI Score</center>
+                                </strong></legend>
+                            <center><input type="number" class="projects" id="gdpi" placeholder="Out of 20">
+                            </center>
                             <center><button type="submit" class="btn-submit" value="predict">Submit</button></center>
                         </div>
-
-                        
-
-
-
-
-
-                        <!-- <div class="field">
-                            
-                        </div> -->
-                        
                     </form>
                 </div>
             </div>
@@ -139,6 +99,7 @@
     <div id='stars'></div>
     <div id='stars2'></div>
     <div id='stars3'></div>
+    <script src="/static/script/login.js"></script>
 </body>
 
-</html>  
+</html>
